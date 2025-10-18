@@ -55,7 +55,3 @@ sudo docker compose up
 ### 3. Add your notebooks
 
 Copy your notebook files from Moodle into the `jupyter` folder.
-
-## Troubleshooting
-
-If you encounter any issues, please open an issue in this repository with detailed information about your environment and the error message.
