@@ -41,11 +41,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ### 1. Download and extract the project files
 
 ```bash
-curl -O 'https://storage-share.vendata-lab.com/filebrowser/api/public/dl/cNSrPn_8'
-tar -xzf cNSrPn_8
-rm -rf cNSrPn_8
-mv Installer/* .
-rm -rf Installer
+git clone https://github.com/Calmantras/artificial-intelligence-jupyter.git
 ```
 
 ### 2. Start the Docker container
