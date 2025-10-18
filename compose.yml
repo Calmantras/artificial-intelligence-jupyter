@@ -1,0 +1,17 @@
+services:
+  jupyter:
+    image: continuumio/anaconda3
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./jupyter:/opt/notebooks
+    command: >
+      /bin/bash -c "
+      conda env create --file /opt/notebooks/environment.yml || true &&
+      jupyter notebook
+      --notebook-dir=/opt/notebooks
+      --ip='*'
+      --port=8888
+      --no-browser
+      --allow-root
+      "
